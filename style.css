@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(images/sky-moon-bg[1].png);
+    background-size: cover;
+    font-family: "Orbitron", sans-serif;
+}
+
+#form{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100vh;
+}
+
+#form-container{
+    position:relative;
+    justify-content: right;
+    background-color: white;
+    min-width: 250px;
+    max-width: 400px;
+    border-radius: 10px;
+    border: none;
+    padding: 50px;
+    box-shadow: rgba(0, 0, 0, .8);
+    margin: 70px;
+    margin-left: 300px;
+}
+
+#form-container h1{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#form-container label{
+    font-size: 75%;
+    font-weight: 500;
+    color: rgb(62, 62, 62);
+}
+
+
+#country{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+}
+
+#people{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+
+}
+
+#email{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+
+
+}
+
+#submit{
+    margin-top: 25px;
+    height: 35px;
+    background-color: rgb(255, 132, 0);
+    border: none;
+    border-radius: 18px;
+    font-size: 1rem;
+    color: white;
+    margin-left: 45px;
+    font-family: "Orbitron", sans-serif;
+    cursor: pointer;
+}
+
+.suit{
+    cursor: pointer;
+}
+
+#spaceman1{
+    min-width: 150px;
+    max-width: 300px;
+    position: absolute;
+    top: 180px;
+    left: 80px;
+    -webkit-animation: mover 3s infinite alternate;
+    animation: mover 3s infinite alternate;
+}
+
+#spaceman2{
+    min-width: 150px;
+    max-width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 300px;
+    left: 450px;
+    -webkit-animation: mover 3s infinite alternate;
+    animation: mover 3s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-30px);}
+}
+
+@keyframes mover {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-30px);}
+}
